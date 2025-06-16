@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "619984638366",
+    "project_id": "logindata-b3d32",
+    "storage_bucket": "logindata-b3d32.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619984638366:android:c5312f4d7adcc37bb1868f",
+        "android_client_info": {
+          "package_name": "com.example.science_chatbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGgGND4WLk_WljyXcKTRaOw30IBWZnl0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
