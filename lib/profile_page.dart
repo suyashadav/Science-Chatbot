@@ -3,6 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'auth_service.dart';
 import 'Sign-in.dart';
+import 'home.dart';
+import 'resources_page.dart';
+import 'chatbot_page.dart';
+import 'quizzes_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -135,6 +139,134 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 10,
+              offset: const Offset(0, -5),
+            )
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+          child: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: Colors.white,
+            selectedItemColor: Colors.green,
+            unselectedItemColor: Colors.black54,
+            currentIndex: 4,
+            showSelectedLabels: true,
+            showUnselectedLabels: true,
+            items: [
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  "assets/images/home1.png",
+                  width: 24,
+                  color: Colors.black54,
+                ),
+                activeIcon: Image.asset(
+                  "assets/images/home1.png",
+                  width: 24,
+                  color: Colors.green,
+                ),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  "assets/images/resource.png",
+                  width: 24,
+                  color: Colors.black54,
+                ),
+                activeIcon: Image.asset(
+                  "assets/images/resource.png",
+                  width: 24,
+                  color: Colors.green,
+                ),
+                label: 'Resource',
+              ),
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  "assets/images/bubble-chat.png",
+                  width: 24,
+                  color: Colors.black54,
+                ),
+                activeIcon: Image.asset(
+                  "assets/images/bubble-chat.png",
+                  width: 24,
+                  color: Colors.green,
+                ),
+                label: 'Chat-Bot',
+              ),
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  "assets/images/ideas.png",
+                  width: 24,
+                  color: Colors.black54,
+                ),
+                activeIcon: Image.asset(
+                  "assets/images/ideas.png",
+                  width: 24,
+                  color: Colors.green,
+                ),
+                label: 'Quiz',
+              ),
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  "assets/images/user.png",
+                  width: 24,
+                  color: Colors.black54,
+                ),
+                activeIcon: Image.asset(
+                  "assets/images/user.png",
+                  width: 24,
+                  color: Colors.green,
+                ),
+                label: 'Profile',
+              ),
+            ],
+            onTap: (index) {
+              switch (index) {
+                case 0:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
+                // break;
+                case 1:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ResourcesPage()),
+                  );
+                  break;
+                case 2:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ChatbotPage()),
+                  );
+                  break;
+                case 3:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const QuizzesPage()),
+                  );
+                  break;
+                case 4:
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //       builder: (context) => const ProfilePage()),
+                  // );
+                  break;
+              }
+            },
+          ),
+        ),
+      ),
     );
   }
 
@@ -335,7 +467,8 @@ class _ProfilePageState extends State<ProfilePage> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal[800],
               ),
-              child: const Text('Update',
+              child: const Text(
+                'Update',
                 style: TextStyle(
                   color: Colors.white,
                 ),

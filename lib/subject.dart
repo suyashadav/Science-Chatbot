@@ -154,7 +154,7 @@ class _SubjectPageState extends State<SubjectPage> {
           ),
         ],
       ),
-      bottomNavigationBar: _buildBottomNavigationBar(),
+      // bottomNavigationBar: _buildBottomNavigationBar(),
     );
   }
 
@@ -377,55 +377,55 @@ class _SubjectPageState extends State<SubjectPage> {
     );
   }
 
-  Widget _buildBottomNavigationBar() {
-    final primaryColor = Colors.green[800] ?? Colors.green;
+  // Widget _buildBottomNavigationBar() {
+  //   final primaryColor = Colors.green[800] ?? Colors.green;
 
-    return Container(
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 10,
-            offset: const Offset(0, -5),
-          )
-        ],
-      ),
-      child: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.white,
-        selectedItemColor: primaryColor,
-        unselectedItemColor: Colors.grey,
-        currentIndex: 1,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: [
-          BottomNavigationBarItem(
-            icon: Image.asset("assets/images/home-btn.png", width: 24),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset("assets/images/resource-btn.png", width: 24),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset("assets/images/chatbot-btn.png", width: 24),
-            label: 'Chatbot',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset("assets/images/quiz-btn.png", width: 24),
-            label: 'Quizzes',
-          ),
-          BottomNavigationBarItem(
-            icon: Image.asset("assets/images/profile-btn.png", width: 24),
-            label: 'Profile',
-          ),
-        ],
-        onTap: (index) {
-          // Handle navigation
-        },
-      ),
-    );
-  }
+  //   return Container(
+  //     decoration: BoxDecoration(
+  //       boxShadow: [
+  //         BoxShadow(
+  //           color: Colors.black.withOpacity(0.1),
+  //           blurRadius: 10,
+  //           offset: const Offset(0, -5),
+  //         )
+  //       ],
+  //     ),
+  //     child: BottomNavigationBar(
+  //       type: BottomNavigationBarType.fixed,
+  //       backgroundColor: Colors.white,
+  //       selectedItemColor: primaryColor,
+  //       unselectedItemColor: Colors.grey,
+  //       currentIndex: 1,
+  //       showSelectedLabels: false,
+  //       showUnselectedLabels: false,
+  //       items: [
+  //         BottomNavigationBarItem(
+  //           icon: Image.asset("assets/images/home-btn.png", width: 24),
+  //           label: '',
+  //         ),
+  //         BottomNavigationBarItem(
+  //           icon: Image.asset("assets/images/resource-btn.png", width: 24),
+  //           label: '',
+  //         ),
+  //         BottomNavigationBarItem(
+  //           icon: Image.asset("assets/images/chatbot-btn.png", width: 24),
+  //           label: 'Chatbot',
+  //         ),
+  //         BottomNavigationBarItem(
+  //           icon: Image.asset("assets/images/quiz-btn.png", width: 24),
+  //           label: 'Quizzes',
+  //         ),
+  //         BottomNavigationBarItem(
+  //           icon: Image.asset("assets/images/profile-btn.png", width: 24),
+  //           label: 'Profile',
+  //         ),
+  //       ],
+  //       onTap: (index) {
+  //         // Handle navigation
+  //       },
+  //     ),
+  //   );
+  // }
 }
 
 class VideoPlayerPage extends StatefulWidget {

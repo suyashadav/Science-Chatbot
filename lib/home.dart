@@ -283,73 +283,73 @@ class _HomePageState extends State<HomePage> {
             selectedItemColor: Colors.green,
             unselectedItemColor: Colors.black54,
             currentIndex: 0,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
+            showSelectedLabels: true,
+            showUnselectedLabels: true,
             items: [
               BottomNavigationBarItem(
                 icon: Image.asset(
-                  "assets/images/home-btn.png",
+                  "assets/images/home1.png",
                   width: 24,
                   color: Colors.black54,
                 ),
                 activeIcon: Image.asset(
-                  "assets/images/home-btn.png",
+                  "assets/images/home1.png",
                   width: 24,
                   color: Colors.green,
                 ),
-                label: '',
+                label: 'Home',
               ),
               BottomNavigationBarItem(
                 icon: Image.asset(
-                  "assets/images/resource-btn.png",
+                  "assets/images/resource.png",
                   width: 24,
                   color: Colors.black54,
                 ),
                 activeIcon: Image.asset(
-                  "assets/images/resource-btn.png",
+                  "assets/images/resource.png",
                   width: 24,
                   color: Colors.green,
                 ),
-                label: '',
+                label: 'Resource',
               ),
               BottomNavigationBarItem(
                 icon: Image.asset(
-                  "assets/images/chatbot-btn.png",
+                  "assets/images/bubble-chat.png",
                   width: 24,
                   color: Colors.black54,
                 ),
                 activeIcon: Image.asset(
-                  "assets/images/chatbot-btn.png",
+                  "assets/images/bubble-chat.png",
                   width: 24,
                   color: Colors.green,
                 ),
-                label: '',
+                label: 'Chat-Bot',
               ),
               BottomNavigationBarItem(
                 icon: Image.asset(
-                  "assets/images/quiz-btn.png",
+                  "assets/images/ideas.png",
                   width: 24,
                   color: Colors.black54,
                 ),
                 activeIcon: Image.asset(
-                  "assets/images/quiz-btn.png",
+                  "assets/images/ideas.png",
                   width: 24,
                   color: Colors.green,
                 ),
-                label: '',
+                label: 'Quiz',
               ),
               BottomNavigationBarItem(
                 icon: Image.asset(
-                  "assets/images/profile-btn.png",
+                  "assets/images/user.png",
                   width: 24,
                   color: Colors.black54,
                 ),
                 activeIcon: Image.asset(
-                  "assets/images/profile-btn.png",
+                  "assets/images/user.png",
                   width: 24,
                   color: Colors.green,
                 ),
-                label: '',
+                label: 'Profile',
               ),
             ],
             onTap: (index) {

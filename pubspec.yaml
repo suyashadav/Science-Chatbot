@@ -81,7 +81,11 @@ flutter:
     - assets/images/sci-chp2.png
     - assets/Science-chp1.pdf
     - assets/Science-chp2.pdf
-
+    - assets/images/bubble-chat.png
+    - assets/images/home1.png
+    - assets/images/ideas.png
+    - assets/images/resource.png
+    - assets/images/user.png
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_test:
